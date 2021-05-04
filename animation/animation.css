@@ -1,0 +1,58 @@
+div{
+    background-color: blue;
+    width: 80px;
+    height: 80px;
+    margin: 50px;
+    border: 5px solid black;
+}
+
+@keyframes run{
+    from{
+        margin-left: 50px;
+    }
+    to{
+        margin-left: 350px;
+        background-color: lightsalmon;
+    }
+}
+
+@keyframes zigzag{
+    0%{
+        margin-left: 50px;
+    }
+    50%{
+        margin-left: 150px;
+        height: 20px;
+        background-color: chartreuse;
+    }
+    100%{
+        margin-left: 350px;
+        background-color: red;
+    }
+}
+
+
+#div1:hover + div{
+    animation: zigzag;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+#div3:hover ~ div{
+    animation: run;
+    animation-duration: 6s;
+    animation-iteration-count: 10;
+    
+}
+
+
+
+
+/* #div1{
+    animation: run;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+} */
+
