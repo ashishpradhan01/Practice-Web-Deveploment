@@ -1,0 +1,23 @@
+*{
+    background-color: lightblue;
+}
+
+
+ol{
+    counter-reset: count;
+}
+li{
+    display: block;
+}
+li::before{
+    content: counters(count,".") " ";
+    counter-increment: count 1;
+}
+
+ol ol{
+    display: none;
+}
+
+li:hover > ol{
+    display: block;
+}
