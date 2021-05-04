@@ -1,0 +1,15 @@
+#div1{
+    margin: 150px;
+    background-color: red;
+    height: 80px;
+    width: 80px;
+    
+}
+
+#div1:hover{
+    transform: scale(3);
+    background-color: green;
+    height: 40px;
+    transition: transform 3s, background-color 6s, height 8s;
+}
+

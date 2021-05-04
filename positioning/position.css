@@ -1,0 +1,32 @@
+div{
+    background-color: violet;
+    border: 5px solid black;
+    margin: 15px;
+    padding: 15px;
+}
+
+/* #div2{
+    position: fixed;
+    bottom: 150px;
+    left: 150px;
+} */
+
+
+#div3{
+    position: static;
+
+    /* position: relative;
+    top:50px;
+    left:-50px; */
+
+    /* position: fixed;
+    top: 50px; */
+
+    /* position: ab-solute;*/ /*depends on nearest negibour(div2) */
+
+}
+
+#div1{
+    position: sticky;
+    top:0px;
+}
