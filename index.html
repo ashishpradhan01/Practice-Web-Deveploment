@@ -4,48 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratice Web Development!!</title>
-    <style>
-        input{
-            width:5rem;
-            height:2rem;
-            font-size: large;
-        }
-        button{height:2rem; font-weight: bold;}
-    </style>
+    <title>Link</title>
 </head>
 <body>
-    <input id="endnumber"></input>
-    <button id="startbtn">START</button>
-    <p id="para">Task</p>
-    <ul id="list"></ul>
-    <h3 id="newsectionofindex">New Section of Index Page</h3>
-<script>
-    let endnumber = document.getElementById("endnumber")
-    let startbtn = document.getElementById("startbtn")
-    let list = document.getElementById("list")
-
-    
-    // startbtn.onclick = function () {
-
-        // let n = parseInt(endnumber.value)
-        const starttime = new Date().getTime()
-        let listdata = ""
-        for(let i=1; i<=1000; i++){
-            let item =""
-            if(i%3==0){
-                item += "fizz"
-            }if(i%5==0){
-                item += "buzz"
-            }if(item==""){
-                item = i
-            }
-            listdata += "<li>" + item +"</li>"
-        }
-        list.innerHTML = listdata
-        const finishtime = new Date().getTime()
-        console.log(finishtime-starttime)
-    // }
-</script>
+    <a href="Assignment/portfolio-webpage.html"> Goto Portfolio Webpage</a>
 </body>
 </html>
